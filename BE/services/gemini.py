@@ -11,7 +11,7 @@ from io import BytesIO
 import base64
 
 
-API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyChYBrCx63yd9ijqg0pLfaY_SaK-UskN3U")
+API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=API_KEY)
 
 def safe_json_loads(json_text: str) -> dict:
