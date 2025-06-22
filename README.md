@@ -47,7 +47,11 @@ This platform lets anyone create a custom 2D browser game by simply describing i
   ```bash
   uvicorn main:app --reload
   ```
-
+  
+  ```bash
+  Dont forget to setup your Gemini API key in gemini.py file in BE/services folder!
+  ```
+  
 ### 2. Frontend (FE)
 
 - **Requirements:** Node.js (v16+ recommended), npm
