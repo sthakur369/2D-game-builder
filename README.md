@@ -64,6 +64,25 @@ This platform lets anyone create a custom 2D browser game by simply describing i
   npm start
   ```
 
+
+## UI Screenshots
+
+
+- HOME SCREEN:
+
+![Home Screen](./screenshots/Home_Screen.jpg)
+
+
+- MODIFY GAME ASSETS POP-UP:
+
+![Modify Popup](./screenshots/modify_popup.jpg)
+
+
+- GAMEPLAY SCENES:
+
+![GamePlay Scene 1](./screenshots/gameplay_scene_1.jpg)
+
+![GamePlay Scene 2](./screenshots/gameplay_scene_2.jpg)
 ---
 
 - The frontend runs on [http://localhost:3000](http://localhost:3000)
