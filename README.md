@@ -36,7 +36,7 @@ This platform lets anyone create a custom 2D browser game by simply describing i
 - **Install dependencies:**
 
   ```bash
-  cd game-builder-platform/BE
+  cd BE
   python -m venv myenv
   myenv\Scripts\activate
   pip install -r requirements.txt
@@ -53,9 +53,13 @@ This platform lets anyone create a custom 2D browser game by simply describing i
 - **Requirements:** Node.js (v16+ recommended), npm
 - **Install dependencies:**
 
-  ```bash
-  cd game-builder-platform
+    ```bash
+  cd FE
   npm install
+  npm install phaser
+  npm install phaser tailwindcss
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init
   ```
 
 - **Run frontend dev server:**
