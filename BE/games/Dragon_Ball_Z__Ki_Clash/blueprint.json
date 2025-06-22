@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Dragon Ball Z: Ki Clash",
+    "description": "A fast-paced 2D anime-style fighting game where iconic Dragon Ball Z characters battle it out with powerful energy attacks and devastating combos against an AI opponent.",
+    "style": "anime"
+  },
+  "characters": [
+    {
+      "name": "Goku (Super Saiyan)",
+      "sprite_request": "Full body sprite sheet of Goku in Super Saiyan form, dynamic fighting poses including idle, walk, run, jump, punch, kick, block, Kamehameha charge, Kamehameha blast (energy with fiery elements), Spirit Bomb charge, Spirit Bomb release, hit reaction, knocked down. High-quality 2D anime game assets, facing left and right.",
+      "moves": [
+        "Punch",
+        "Kick",
+        "Block",
+        "Jump",
+        "Dash",
+        "Kamehameha (Special Attack)",
+        "Spirit Bomb (Ultimate Attack)"
+      ],
+      "controls": {
+        "movement": "WASD (A: left, D: right, W: jump, S: crouch/block)",
+        "attack_light": "J",
+        "attack_heavy": "K",
+        "special_attack": "L",
+        "ultimate_attack": "I",
+        "dash": "Space"
+      }
+    },
+    {
+      "name": "Vegeta (Super Saiyan)",
+      "sprite_request": "Full body sprite sheet of Vegeta in Super Saiyan form, dynamic fighting poses including idle, walk, run, jump, punch, kick, block, Galick Gun charge, Galick Gun blast (energy with purple fiery elements), Final Flash charge, Final Flash release, hit reaction, knocked down. High-quality 2D anime game assets, facing left and right.",
+      "moves": [
+        "Punch",
+        "Kick",
+        "Block",
+        "Jump",
+        "Dash",
+        "Galick Gun (Special Attack)",
+        "Final Flash (Ultimate Attack)"
+      ],
+      "controls": {
+        "ai_logic": "Handles its own movement and attack decisions based on player proximity and energy meter."
+      }
+    }
+  ],
+  "scene": {
+    "background_request": "A deserted rocky landscape with shattered cliffs and distant mountains under a dramatic anime sky, resembling an iconic Dragon Ball Z battleground. High resolution 2D background art.",
+    "weather": "Subtle dust clouds, energetic auras faintly emanating from the ground, shimmering air from ki exertion.",
+    "music": "High-energy, fast-paced anime rock with orchestral elements, intense battle theme.",
+    "lighting": "Bright daylight, dramatic shadows cast by characters during fast movements and attacks."
+  },
+  "gameplay": {
+    "genre": "Fighting",
+    "physics": {
+      "gravity": 1500,
+      "jump_height": 550,
+      "speed": 400
+    },
+    "camera": "Follow player with limited bounds, subtly zooming in on impactful special attacks and combos.",
+    "win_condition": "First to deplete enemy health bar to zero within a 99-second time limit. Best of 3 rounds."
+  },
+  "ui_ux": {
+    "ui_theme": "Futuristic anime tech, vibrant energy effects, sharp edges, metallic textures with glowing accents (e.g., blue for player, red for opponent).",
+    "hud": [
+      "Player Health Bar",
+      "Opponent Health Bar",
+      "Player Energy Meter (Ki Bar)",
+      "Opponent Energy Meter (Ki Bar)",
+      "Combo Counter",
+      "Round Timer",
+      "Player Character Portrait",
+      "Opponent Character Portrait",
+      "Round Indicator (e.g., 'Round 1')"
+    ],
+    "menus": [
+      "Start Screen (Play, Options, Credits, Exit)",
+      "Character Select Screen (Player 1 and AI selection with dynamic character previews)",
+      "Loading Screen (with tips and asset loading progress)",
+      "Pause Menu (Resume, Restart Match, Options, Main Menu)",
+      "Victory/Defeat Screen (with score and rematch option)",
+      "Options Menu (Audio, Controls, Graphics)"
+    ],
+    "responsiveness": "Fully responsive layout, optimized for both desktop (keyboard/gamepad) and mobile devices (on-screen touch controls, adaptable button sizes and placement).",
+    "animations": [
+      "Smooth fade-in/out transitions between menus",
+      "Character selection preview animations (scaling, glow, idle animation)",
+      "HUD element pop-in/slide-in animations at start of round",
+      "Energy meter depletion/refill animations",
+      "Attack hit effects (screen shake, flash, particle bursts)",
+      "UI element hover and click feedback animations (scale, color change)",
+      "Victory/defeat screen animations (character pose, text effects)"
+    ]
+  }
+}

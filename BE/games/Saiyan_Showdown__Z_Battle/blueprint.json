@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Saiyan Showdown: Z Battle",
+    "description": "Experience explosive 2D anime fighting with iconic Z-style characters and energy-charged combat in this browser-based brawler.",
+    "style": "Dragon Ball Z anime style"
+  },
+  "characters": [
+    {
+      "name": "Goku",
+      "sprite_request": "Full body sprite sheet for a powerful anime warrior character, resembling Dragon Ball Z Goku, with spiky golden hair (Super Saiyan), orange gi, in multiple poses: idle, running, jumping, punching, kicking, energy blast charging, energy blast firing, special move (Kamehameha), hurt, defeated. High quality 2D art, cell shaded, dynamic action poses, 64x64 or 128x128 pixels per frame.",
+      "moves": [
+        "Light Punch",
+        "Heavy Punch",
+        "Light Kick",
+        "Heavy Kick",
+        "Kamehameha Blast",
+        "Spirit Bomb (Special)"
+      ],
+      "controls": {
+        "movement": "WASD",
+        "light_punch": "J",
+        "heavy_punch": "U",
+        "light_kick": "K",
+        "heavy_kick": "I",
+        "energy_blast": "L",
+        "special_move": "Space + L"
+      }
+    },
+    {
+      "name": "Vegeta",
+      "sprite_request": "Full body sprite sheet for a proud anime warrior character, resembling Dragon Ball Z Vegeta, with spiky black hair, blue battle suit, in multiple poses: idle, running, jumping, punching, kicking, energy blast charging, energy blast firing, special move (Final Flash), hurt, defeated. High quality 2D art, cell shaded, dynamic action poses, 64x64 or 128x128 pixels per frame.",
+      "moves": [
+        "Light Punch",
+        "Heavy Punch",
+        "Light Kick",
+        "Heavy Kick",
+        "Galick Gun Blast",
+        "Final Flash (Special)"
+      ],
+      "controls": {
+        "movement": "Arrow Keys",
+        "light_punch": "NumPad 4",
+        "heavy_punch": "NumPad 7",
+        "light_kick": "NumPad 5",
+        "heavy_kick": "NumPad 8",
+        "energy_blast": "NumPad 6",
+        "special_move": "NumPad 0 + NumPad 6"
+      }
+    }
+  ],
+  "scene": {
+    "background_request": "A dynamic 2D fighting game background image depicting a destroyed rocky wasteland with floating debris in the sky, reminiscent of a Dragon Ball Z battle arena. Orange sky, distant mountains, cracks in the ground. High quality anime art style, 1920x1080 resolution.",
+    "weather": "Subtle dust clouds, glowing energy particles in the air",
+    "music": "High-energy instrumental rock, fast tempo, electric guitars, synth, heroic and intense, anime fight theme",
+    "lighting": "Bright, intense daytime with dynamic shadows from destruction"
+  },
+  "gameplay": {
+    "genre": "Fighting",
+    "physics": {
+      "gravity": 1200,
+      "jump_height": 450,
+      "speed": 350,
+      "air_control": 0.7,
+      "dash_speed": 700
+    },
+    "camera": "Follows active player, with a bounded camera that smoothly pans to keep both players in view, or zooms out slightly if they are far apart.",
+    "win_condition": "First player to deplete opponent's health bar (Best of 3 rounds)"
+  },
+  "ui_ux": {
+    "ui_theme": "Futuristic anime with sharp angles, glowing energy accents, and bold typography. Dominant colors: blues, oranges, blacks, and electric yellows, with high contrast elements.",
+    "hud": [
+      "Player 1 Health Bar (top left)",
+      "Player 2 Health Bar (top right)",
+      "Player 1 Ki/Energy Bar (below health)",
+      "Player 2 Ki/Energy Bar (below health)",
+      "Round Counter (center top)",
+      "Combo Counter (above character during combos)"
+    ],
+    "menus": [
+      "Start Screen (with Play, Options, Credits buttons, dynamic background animation)",
+      "Character Select Screen (dynamic character poses, animated selection highlight, character stats display)",
+      "Pause Menu (Resume, Restart, Options, Quit, with translucent overlay)",
+      "Game Over / Victory Screen (character specific victory pose/animation, score summary)"
+    ],
+    "responsiveness": true,
+    "animations": [
+      "Smooth fading transitions between menus",
+      "Character selection highlight animations with glow effects",
+      "Explosive energy effects for attacks (e.g., Kamehameha wave, Final Flash) with screen shake",
+      "Hit impact flashes and audio feedback on heavy hits",
+      "UI element pop-in animations with sound effects",
+      "Health/Ki bar depletion animations"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+pandas
+numpy
+fastapi
+python-dotenv
+uvicorn
+requests
+google-genai
+google-generativeai
+Pillow
+psutil
